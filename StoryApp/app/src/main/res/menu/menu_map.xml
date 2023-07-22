@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/main"
+        android:icon="@drawable/ic_baseline_home_24dp"
+        android:title="@string/home"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
+    <item
+        android:id="@+id/menu_map"
+        android:icon="@drawable/ic_baseline_settings_applications_24dp"
+        android:title="@string/setting_map"
+        app:showAsAction="always">
+        <menu>
+            <item
+            android:id="@+id/normal_type"
+            android:title="@string/normal_type"
+            app:showAsAction="never" />
+            <item
+            android:id="@+id/satellite_type"
+            android:title="@string/satellite_type"
+            app:showAsAction="never" />
+            <item
+            android:id="@+id/terrain_type"
+            android:title="@string/terrain_type"
+            app:showAsAction="never"/>
+            <item
+            android:id="@+id/hybrid_type"
+            android:title="@string/hybrid_type"
+            app:showAsAction="never" />
+        </menu>
+   </item>
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_baseline_logout_24dp"
+        android:title="@string/logout"
+        app:showAsAction="always"/>
+</menu>
